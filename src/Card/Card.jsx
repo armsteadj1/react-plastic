@@ -1,21 +1,21 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import CardWrapper from '../Values/CardWrapper/CardWrapper';
-import CardFront from '../Values/CardFront/CardFront';
-import Cvc from '../Values/Cvc/Cvc';
-import Number from '../Values/Number/Number';
-import Name from '../Values/Name/Name';
-import Expiry from '../Values/Expiry/Expiry';
+import React from 'react';
 import CardBack from '../Values/CardBack/CardBack';
+import CardFront from '../Values/CardFront/CardFront';
+import CardWrapper from '../Values/CardWrapper/CardWrapper';
+import Cvc from '../Values/Cvc/Cvc';
+import Expiry from '../Values/Expiry/Expiry';
+import Name from '../Values/Name/Name';
+import Number from '../Values/Number/Number';
 
 const realTypes = ['amex', 'visa', 'mastercard', 'maestro', 'discover', 'dinersclub', 'dankort'];
 const type = cardType => ((realTypes.includes(cardType)) ? cardType : 'unknown');
 
 const Card = props => (
-  <CardWrapper type={type(props.type)} back={props.back}>
-    <CardFront type={type(props.type)}>
+  <CardWrapper type={type(props.type)} back={props.back} >
+    <CardFront type={type(props.type)} >
       <Cvc>{props.cvc}</Cvc>
-      <Number amex={props.type === 'amex'}>{props.number}</Number>
+      <Number amex={props.type === 'amex'} >{props.number}</Number>
       <Name >{props.name}</Name>
       <Expiry>{props.expiry}</Expiry>
     </CardFront>

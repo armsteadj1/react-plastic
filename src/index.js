@@ -1,1 +1,3 @@
-export Plastic from './Plastic';
+import Plastic from './Plastic';
+
+export default Plastic;
