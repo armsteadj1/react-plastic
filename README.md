@@ -16,18 +16,18 @@ npm install react-plastic
 
 ## Usage
 
-```
-	import React from 'react';
-	import Plastic from 'react-plastic';
+```javascript
+import React from 'react';
+import Plastic from 'react-plastic';
 
-	export const ShowCard = () => (
-      <Plastic
-        type="amex"
-        name="Peter Sagan"
-        expiry="10/20"
-        number="444466666655555"
-        cvc="3333"
-      />);
+export const ShowCard = () => (
+  <Plastic
+    type="amex"
+    name="Peter Sagan"
+    expiry="10/20"
+    number="444466666655555"
+    cvc="3333"
+  />);
 ```
 
 That's it! Depending on your setup, the CSS should be pulled in automagically.
