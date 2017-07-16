@@ -37,6 +37,7 @@ npm install react-plastic
   * accepts either: 02/2020 or 02/20.
 * `number` - A string for the card number that should appear on the card
 * `name` - A string for the name that should appear on the card
+* `cvc` - A string for the cvc that should appear front and back of the card
 * `back` - A boolean to show the back of the card
 
 ## Scaling
@@ -45,8 +46,10 @@ To override, you should be able to override the css for:
 
 `@media (max-width: <SIZE>px) { .card-wrapper {} }`
 
-## To do
-* switch to payment npm
+## CSS
+If for some reason your styling isn't working, you may need to include:
+ 
+`node_modules/react-plastic/styles/card.css`
 
 ## Contributors
 
