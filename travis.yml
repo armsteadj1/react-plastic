@@ -1,0 +1,13 @@
+language: node_js
+sudo: false
+node_js:
+- stable
+- 7
+deploy:
+  provider: npm
+  email: armsteadj1@gmail.com
+  api_key:
+    secure: h7dbJIGgfWPQS1XbT3ZGdv8Gf3A1a5KvLYwkSLxEBDIj+RgG2lrpNhKwMnIoD4doBlc2e+D7CjEQsQyCN1xfttXTZhvISujvRF+/WZLtVICkTmNR1tz1h73bkztNzZQJmAJzBShOYmKw1ufZ+B9e9w2HG7z3Ri+EEhL+GXFgZZfyrLWBbIj1yZRqRFUsDLbSt3f/b+KotYbWJHePVZgjhKEB4Ar/4eUGp8uiwxeMB8H2ftp4kOI9BjyBoeHAiG9OA8+M15MP+G/VNq8nNFmZVjqbTdH9HEKt20zJ3i4Z0xoSrfbH+HB6v992fcbTWJ6SKzhadDeqdSmlMug/u9h/o2RBcQXvcBGzlhIVnDYltc9MySgr5bS20bE39p+ghknPfz0bQnO2zO8KFSYHH/jZxWgSqYnrDJdCQu/R+3DTC4B8MRgKkxEYvHbMJSNnh8LYYqYupkSGFzMAHcO2yif7ikIIfU3/iLnhnyIlt4W5w8P1uOEuGSomNPs70I5bKjbRH0Y/VayLrWdd1ISzgOcPtnCkSCZLB7VVrZteUzEWYxu+U1xQTBn74PM8brfSoUckOiRRc0N/XvylH0RNPgSfVoDStcnzBltwu/iU0tPKeaVedb0HJoopBMCQikxFkYdkrBalgMwQzdf1XGGD3sgP8uJ4oYQ8/YlmB+Dd8giuHg0=
+  on:
+    tags: true
+    repo: armsteadj1/react-plastic
