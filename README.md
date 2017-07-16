@@ -2,6 +2,8 @@
 
 A no hassle react display for a card using only the css from jessepollak's Card (https://github.com/jessepollak/card). This does not use the javascript from this project, it is only to display static cards. If you need it to be interactive, I suggest using another project for this (https://www.npmjs.com/package/card-react).  
 
+![card](https://cl.ly/0q1P0j2M0V2a/Image%202017-07-16%20at%209.33.41%20AM.png)
+
 Attempts to make a best effort to scale the card. Look below for information on how to override this.
 
 ## Packages
@@ -27,6 +29,8 @@ npm install react-plastic
         cvc="3333"
       />);
 ```
+
+That's it! Depending on your setup, the CSS should be pulled in automagically.
 
 ### Properties
 
