@@ -149,6 +149,10 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]',
         },
       },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style','css?importLoaders=1&modules&localIdentName=[name]__[local]___[hash:base64:5]!postcss', extractTextPluginOptions)
+      },
       // "url" loader works just like "file" loader but it also embeds
       // assets smaller than specified size as data URLs to avoid requests.
       {

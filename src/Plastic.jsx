@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Card from './Card/Card';
+import './styles/card.css';
 
 const Plastic = props => (
   <div className="card-wrapper" >
