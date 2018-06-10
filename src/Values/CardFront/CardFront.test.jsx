@@ -11,18 +11,18 @@ let cardType;
 beforeEach(() => {
   children = <Expiry>string</Expiry>;
   cardType = shrug.pick(['amex', 'visa', 'mastercard']);
-  component = shallow(<CardFront type={cardType} >{children}</CardFront>);
+  component = shallow(<CardFront type={cardType}>{children}</CardFront>);
 });
 
 it('show the front correctly', () => {
   const classes = `jp-card-logo jp-card-${cardType}`;
-  expect(component)
-    .toContainReact(
-      <div className="jp-card-front" >
-        <div className={classes} />
-        <div className="jp-card-lower" >
-          <div className="jp-card-shiny" />
-          {children}
-        </div>
-      </div>);
+  expect(component).toContainReact(
+    <div className="jp-card-front">
+      <div className={classes}>{cardType}</div>
+      <div className="jp-card-lower">
+        <div className="jp-card-shiny" />
+        {children}
+      </div>
+    </div>,
+  );
 });
